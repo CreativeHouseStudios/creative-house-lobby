@@ -115,15 +115,21 @@ export function CreativeHouseLobby() {
         ref={doorsRef}
         className="relative py-24 px-6 overflow-hidden"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0A0A0A]/95 via-[#111111]/90 to-[#0A0A0A]/95" />
+        <div className="absolute inset-0 bg-[#0A0A0A]" />
+        {/* Hallway glow — warm amber light pooling behind the cards */}
         <div
-          className="absolute inset-0 opacity-5"
+          className="absolute inset-0"
           style={{
-            backgroundImage:
-              'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px)',
+            background: 'radial-gradient(ellipse 80% 60% at 50% 62%, rgba(212,162,76,0.09) 0%, rgba(212,162,76,0.04) 35%, transparent 70%)',
           }}
         />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(201,151,42,0.06),transparent_65%)]" />
+        {/* Subtle vignette to deepen the edges */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'radial-gradient(ellipse 120% 100% at 50% 50%, transparent 40%, rgba(0,0,0,0.7) 100%)',
+          }}
+        />
 
         {/* Top accent */}
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#C9972A]/40 to-transparent" />
