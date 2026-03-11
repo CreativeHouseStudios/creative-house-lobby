@@ -405,21 +405,14 @@ export function CreativeHouseLobby() {
 
                 {/* Card 1 — Shelly */}
                 <div className="backdrop-blur-md bg-white/[0.04] border border-zinc-800 rounded-sm overflow-hidden">
-                  {/* Video placeholder — replace src with HeyGen URL when ready */}
-                  <div className="relative aspect-video bg-zinc-900 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center mx-auto mb-3">
-                        <div className="w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[10px] border-l-zinc-500 ml-1" />
-                      </div>
-                      <p className="text-xs text-zinc-600 font-light">Video coming soon</p>
-                    </div>
-                    {/* Uncomment and replace with HeyGen embed when ready:
+                  <div className="relative aspect-video bg-zinc-900">
                     <iframe
-                      src="HEYGEN_URL_HERE"
+                      src="https://app.heygen.com/embeds/bc5367baad4944438910d6094117815a"
+                      title="CHS-Lobby Welcome-SF"
                       className="absolute inset-0 w-full h-full"
-                      allow="autoplay"
+                      allow="encrypted-media; fullscreen"
                       allowFullScreen
-                    /> */}
+                    />
                   </div>
                   <div className="p-5">
                     <p className="text-sm text-zinc-200 font-light mb-1">Shelly Frank</p>
