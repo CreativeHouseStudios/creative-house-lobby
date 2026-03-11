@@ -405,7 +405,7 @@ export function CreativeHouseLobby() {
 
                 {/* Card 1 — Shelly */}
                 <div className="backdrop-blur-md bg-white/[0.04] border border-zinc-800 rounded-sm overflow-hidden">
-                  <div className="relative aspect-video bg-zinc-900">
+                  <div className="relative aspect-[9/16] bg-zinc-900">
                     <iframe
                       src="https://app.heygen.com/embeds/bc5367baad4944438910d6094117815a"
                       title="CHS-Lobby Welcome-SF"
@@ -422,7 +422,7 @@ export function CreativeHouseLobby() {
 
                 {/* Card 2 — Glen */}
                 <div className="backdrop-blur-md bg-white/[0.04] border border-zinc-800 rounded-sm overflow-hidden">
-                  <div className="relative aspect-video bg-zinc-900">
+                  <div className="relative aspect-[9/16] bg-zinc-900">
                     <iframe
                       src="https://app.heygen.com/embeds/2075a87b0313460cab6bd67ad356f21d"
                       title="CHS-Lobby Welcome-GK"
