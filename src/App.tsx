@@ -5,6 +5,7 @@ import { MovementPage } from './pages/movements/MovementPage';
 import { StoryLibrary } from './pages/StoryLibrary';
 import { CreatorNetwork } from './pages/CreatorNetwork';
 import { WorkWithUs } from './pages/WorkWithUs';
+import { VoicesIntroPage } from './pages/VoicesIntroPage';
 import { StudioLandingPage } from './pages/studio/StudioLandingPage';
 import { ProductionsPage } from './pages/studio/ProductionsPage';
 import { ProjectsPage } from './pages/studio/ProjectsPage';
@@ -19,6 +20,7 @@ function App() {
       <Route path="/movements/:slug" element={<MovementPage />} />
       <Route path="/stories" element={<StoryLibrary />} />
       <Route path="/voices" element={<CreatorNetwork />} />
+      <Route path="/voices-intro" element={<VoicesIntroPage />} />
       <Route path="/studio" element={<StudioLandingPage />} />
       <Route path="/studio/productions" element={<ProductionsPage />} />
       <Route path="/studio/projects" element={<ProjectsPage />} />
