@@ -374,7 +374,7 @@ export function CreativeHouseLobby() {
       {/* ── MESSAGE MODAL ────────────────────────────────────────────────── */}
       {modalOpen && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
+          className="fixed inset-0 z-50 flex items-start justify-center p-4 md:p-8 overflow-y-auto"
           style={{ animation: 'fadeIn 0.3s ease' }}
         >
           {/* Backdrop */}
