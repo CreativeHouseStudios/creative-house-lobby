@@ -1,6 +1,6 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Globe, Film, Mic } from 'lucide-react';
+import { Globe, Film, Mic, X } from 'lucide-react';
 
 // ── 3 DOORS (mirrors IDLW "Follow the Water" currents) ──────────────────────
 const doors = [
@@ -58,9 +58,18 @@ const networkPoints = [
 export function CreativeHouseLobby() {
   const navigate = useNavigate();
   const doorsRef = useRef<HTMLDivElement>(null);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const scrollToDoors = () => {
     doorsRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
+  const enterLobby = () => {
+    closeModal();
+    setTimeout(() => doorsRef.current?.scrollIntoView({ behavior: 'smooth' }), 100);
   };
 
   return (
@@ -98,7 +107,7 @@ export function CreativeHouseLobby() {
           </p>
 
           <button
-            onClick={scrollToDoors}
+            onClick={openModal}
             className="px-10 py-3 bg-white/10 backdrop-blur-sm border border-white/60 rounded-sm text-white hover:bg-white hover:text-[#0A0A0A] transition-all duration-300 text-base font-light shadow-lg"
           >
             A Message from Us
@@ -361,6 +370,108 @@ export function CreativeHouseLobby() {
           </div>
         </div>
       </footer>
+
+      {/* ── MESSAGE MODAL ────────────────────────────────────────────────── */}
+      {modalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
+          style={{ animation: 'fadeIn 0.3s ease' }}
+        >
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/85 backdrop-blur-sm"
+            onClick={closeModal}
+          />
+
+          {/* Panel */}
+          <div className="relative w-full max-w-4xl bg-zinc-950 border border-zinc-800 rounded-sm shadow-2xl overflow-hidden">
+
+            {/* Close button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 z-10 p-2 text-zinc-500 hover:text-zinc-100 transition-colors"
+              aria-label="Close"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            <div className="p-8 md:p-10">
+              {/* Header */}
+              <p className="text-xs tracking-[0.3em] text-zinc-500 uppercase mb-2">Creative House Studios</p>
+              <h2 className="text-2xl md:text-3xl text-zinc-100 font-light mb-8">A Message from Us</h2>
+
+              {/* Two video cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
+                {/* Card 1 — Shelly */}
+                <div className="backdrop-blur-md bg-white/[0.04] border border-zinc-800 rounded-sm overflow-hidden">
+                  {/* Video placeholder — replace src with HeyGen URL when ready */}
+                  <div className="relative aspect-video bg-zinc-900 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center mx-auto mb-3">
+                        <div className="w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[10px] border-l-zinc-500 ml-1" />
+                      </div>
+                      <p className="text-xs text-zinc-600 font-light">Video coming soon</p>
+                    </div>
+                    {/* Uncomment and replace with HeyGen embed when ready:
+                    <iframe
+                      src="HEYGEN_URL_HERE"
+                      className="absolute inset-0 w-full h-full"
+                      allow="autoplay"
+                      allowFullScreen
+                    /> */}
+                  </div>
+                  <div className="p-5">
+                    <p className="text-sm text-zinc-200 font-light mb-1">Shelly Frank</p>
+                    <p className="text-xs text-zinc-500 font-light">Why Creative House Exists</p>
+                  </div>
+                </div>
+
+                {/* Card 2 — Glen */}
+                <div className="backdrop-blur-md bg-white/[0.04] border border-zinc-800 rounded-sm overflow-hidden">
+                  <div className="relative aspect-video bg-zinc-900 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="w-12 h-12 rounded-full border border-zinc-700 flex items-center justify-center mx-auto mb-3">
+                        <div className="w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[10px] border-l-zinc-500 ml-1" />
+                      </div>
+                      <p className="text-xs text-zinc-600 font-light">Video coming soon</p>
+                    </div>
+                    {/* Uncomment and replace with HeyGen embed when ready:
+                    <iframe
+                      src="HEYGEN_URL_HERE"
+                      className="absolute inset-0 w-full h-full"
+                      allow="autoplay"
+                      allowFullScreen
+                    /> */}
+                  </div>
+                  <div className="p-5">
+                    <p className="text-sm text-zinc-200 font-light mb-1">Glen Kerby</p>
+                    <p className="text-xs text-zinc-500 font-light">Why These Stories Matter</p>
+                  </div>
+                </div>
+
+              </div>
+
+              {/* Enter lobby CTA */}
+              <div className="text-center">
+                <button
+                  onClick={enterLobby}
+                  className="px-10 py-3 bg-zinc-100 text-zinc-950 rounded-sm hover:bg-white transition-colors text-base font-light"
+                >
+                  Enter the Lobby
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <style>{`
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to   { opacity: 1; }
+        }
+      `}</style>
 
     </div>
   );
