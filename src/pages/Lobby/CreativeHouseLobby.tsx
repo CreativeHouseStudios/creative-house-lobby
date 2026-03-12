@@ -16,7 +16,7 @@ const doors = [
     title: 'Production Studio',
     description: 'Explore films, documentary projects, and the production slate emerging from Creative House.',
     icon: Film,
-    path: '/studio',
+    path: '/studio/productions',
   },
   {
     id: 3,
@@ -94,10 +94,6 @@ export function CreativeHouseLobby() {
   const navigate = useNavigate();
   const doorsRef = useRef<HTMLDivElement>(null);
   const [modalOpen, setModalOpen] = useState(false);
-
-  const scrollToDoors = () => {
-    doorsRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
@@ -296,7 +292,7 @@ export function CreativeHouseLobby() {
 
           <div className="mt-8 mb-10 flex items-center justify-center">
             <Link
-              to="/studio"
+              to="/studio/productions"
               className="inline-flex items-center gap-2 px-8 py-3 bg-white/10 backdrop-blur-sm border border-white/40 rounded-sm text-white hover:bg-white hover:text-[#0A0A0A] transition-all duration-300 text-base font-light"
             >
               Enter Production Studio
@@ -493,7 +489,7 @@ export function CreativeHouseLobby() {
               Movements
             </Link>
             <span className="text-[#C9972A]/20">•</span>
-            <Link to="/studio" className="text-[#C9972A]/70 hover:text-[#C9972A] text-sm font-light transition-colors duration-300">
+            <Link to="/studio/productions" className="text-[#C9972A]/70 hover:text-[#C9972A] text-sm font-light transition-colors duration-300">
               Production
             </Link>
             <span className="text-[#C9972A]/20">•</span>

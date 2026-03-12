@@ -69,18 +69,19 @@ export function FilmPage() {
             </div>
           </div>
 
-          {/* Body paragraphs */}
-          {p.body.length > 0 && (
-            <div className="py-16 border-t border-zinc-900">
+          {/* Named sections */}
+          {p.sections.map((section) => (
+            <div key={section.heading} className="py-16 border-t border-zinc-900">
+              <h2 className="text-xs tracking-[0.3em] text-zinc-600 uppercase mb-8">{section.heading}</h2>
               <div className="flex flex-col gap-5 max-w-[680px]">
-                {p.body.map((para, i) => (
+                {section.paragraphs.map((para, i) => (
                   <p key={i} className="text-base text-zinc-400 font-light leading-relaxed">
                     {para}
                   </p>
                 ))}
               </div>
             </div>
-          )}
+          ))}
 
           {/* Metadata */}
           {p.details.length > 0 && (

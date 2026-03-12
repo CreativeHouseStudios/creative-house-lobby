@@ -61,9 +61,9 @@ export function ProductionsPage() {
                       {p.synopsis}
                     </p>
 
-                    {p.body.length > 0 && (
+                    {p.sections.length > 0 && (
                       <div className="flex flex-col gap-4 mb-8">
-                        {p.body.map((para, i) => (
+                        {p.sections[0].paragraphs.map((para, i) => (
                           <p key={i} className="text-sm text-zinc-500 font-light leading-relaxed">
                             {para}
                           </p>
