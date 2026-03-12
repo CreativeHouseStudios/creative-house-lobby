@@ -30,7 +30,7 @@ export function FilmPage() {
 
           {/* Back link */}
           <Link
-            to="/studio/productions"
+            to="/productions"
             className="inline-flex items-center gap-2 text-zinc-600 hover:text-zinc-300 text-sm transition-colors mb-16 group"
           >
             <ArrowLeft className="w-3 h-3 group-hover:-translate-x-1 transition-transform" />
