@@ -160,9 +160,22 @@ export function CreativeHouseLobby() {
                 <button
                   key={door.id}
                   onClick={() => navigate(door.path)}
-                  className="group relative backdrop-blur-md bg-white/[0.08] p-8 rounded-2xl border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.18)] hover:shadow-[0_8px_48px_0_rgba(201,151,42,0.25)] transition-all duration-500 hover:-translate-y-2 text-left overflow-hidden"
+                  className="group relative backdrop-blur-md bg-white/[0.08] p-8 rounded-sm border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.18)] hover:shadow-[0_8px_48px_0_rgba(201,151,42,0.25)] transition-all duration-500 hover:-translate-y-2 text-left overflow-hidden"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
+                  {/* Film strip sprockets — top */}
+                  <div className="absolute top-0 left-0 right-0 flex justify-around items-center px-3 h-5 pointer-events-none">
+                    {Array.from({ length: 7 }).map((_, i) => (
+                      <div key={i} className="w-2.5 h-1.5 bg-[#C9972A]/20 rounded-[1px]" />
+                    ))}
+                  </div>
+                  {/* Film strip sprockets — bottom */}
+                  <div className="absolute bottom-0 left-0 right-0 flex justify-around items-center px-3 h-5 pointer-events-none">
+                    {Array.from({ length: 7 }).map((_, i) => (
+                      <div key={i} className="w-2.5 h-1.5 bg-[#C9972A]/20 rounded-[1px]" />
+                    ))}
+                  </div>
+
                   {/* Ripple on hover */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 rounded-full bg-[#C9972A]/10 group-hover:w-[300%] group-hover:h-[300%] transition-all duration-700" />
