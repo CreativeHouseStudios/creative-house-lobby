@@ -160,19 +160,19 @@ export function CreativeHouseLobby() {
                 <button
                   key={door.id}
                   onClick={() => navigate(door.path)}
-                  className="group relative backdrop-blur-md bg-white/[0.08] p-8 rounded-sm border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.18)] hover:shadow-[0_8px_48px_0_rgba(201,151,42,0.25)] transition-all duration-500 hover:-translate-y-2 text-left overflow-hidden"
+                  className="group relative backdrop-blur-md bg-white/[0.08] px-8 pt-12 pb-12 rounded-sm border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.18)] hover:shadow-[0_8px_48px_0_rgba(201,151,42,0.25)] transition-all duration-500 hover:-translate-y-2 text-left overflow-hidden"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  {/* Film strip sprockets — top */}
-                  <div className="absolute top-0 left-0 right-0 flex justify-around items-center px-3 h-5 pointer-events-none">
-                    {Array.from({ length: 7 }).map((_, i) => (
-                      <div key={i} className="w-2.5 h-1.5 bg-[#C9972A]/20 rounded-[1px]" />
+                  {/* Film strip edge — top */}
+                  <div className="absolute top-0 left-0 right-0 h-7 bg-zinc-900/70 border-b border-zinc-700/40 flex items-center justify-around px-4 pointer-events-none">
+                    {Array.from({ length: 8 }).map((_, i) => (
+                      <div key={i} className="w-3 h-[11px] bg-zinc-950 border border-zinc-600/50 rounded-[2px]" />
                     ))}
                   </div>
-                  {/* Film strip sprockets — bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 flex justify-around items-center px-3 h-5 pointer-events-none">
-                    {Array.from({ length: 7 }).map((_, i) => (
-                      <div key={i} className="w-2.5 h-1.5 bg-[#C9972A]/20 rounded-[1px]" />
+                  {/* Film strip edge — bottom */}
+                  <div className="absolute bottom-0 left-0 right-0 h-7 bg-zinc-900/70 border-t border-zinc-700/40 flex items-center justify-around px-4 pointer-events-none">
+                    {Array.from({ length: 8 }).map((_, i) => (
+                      <div key={i} className="w-3 h-[11px] bg-zinc-950 border border-zinc-600/50 rounded-[2px]" />
                     ))}
                   </div>
 
