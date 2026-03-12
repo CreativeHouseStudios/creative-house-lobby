@@ -1,0 +1,762 @@
+CREATIVE HOUSE LOBBY — SITE MAP & FULL COPY
+URL: creative-house-lobby.vercel.app
+Repository: CreativeHouseStudios/creative-house-lobby
+Generated: 2026-03-11
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SITE STRUCTURE AT A GLANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+/                       Home — Creative House Lobby
+/movements              Story Universes Index
+/movements/idlw         I Drink Living Water
+/movements/simple-plan  The Simple Plan
+/movements/advo-cassie  Advo-Cassie
+/stories                Story Library
+/voices                 Voices Network
+/voices-intro           Voices Introduction / Contact
+/collaborate            For Voices Doing Good (Creators & Sponsors)
+/work-with-us           Amplify Your Voice (Credibility Spine clients)
+/studio                 Creative House Productions (Studio Landing)
+/studio/productions     Productions
+/studio/projects        Projects
+/studio/systems         Systems
+/studio/about           About
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 1 — HOME  /
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: 5 sections + modal
+
+SECTION 1 — HERO
+Background: Full-screen video (/00-Hero-cover.mp4), dark gradient overlay.
+
+  [H1] Creative House Studios
+  [divider line]
+  [text] A network of story worlds, films, and voices for good.
+  [subtext] We build the infrastructure behind movements that deserve to be seen,
+            trusted, and shared.
+  [button] A Message from Us → opens modal
+
+MODAL — "A Message from Us"
+  Two 9:16 video cards side by side:
+    Card 1: Shelly Frank — "Why Creative House Exists"
+            HeyGen embed: bc5367baad4944438910d6094117815a
+    Card 2: Glen Kerby — "Why These Stories Matter"
+            HeyGen embed: 2075a87b0313460cab6bd67ad356f21d
+  [button] Enter the Lobby → closes modal, scrolls to Section 2
+
+SECTION 2 — CHOOSE YOUR PATH
+Background: Near-black (#0A0A0A) with warm amber radial glow behind cards.
+Gold accent lines top and bottom.
+
+  [H2] Choose Your Path
+  [subtext] Each door leads somewhere different.
+
+  Three cards:
+    Card 1: Story Universes
+            Enter the worlds we are building — movements, causes, and living
+            story ecosystems.
+            → links to /movements
+
+    Card 2: Production Studio
+            Explore films, documentary projects, and the production slate
+            emerging from Creative House.
+            → links to /studio
+
+    Card 3: Voices Network
+            For creators, researchers, and storytellers who want to build with us.
+            → links to /voices
+
+SECTION 3 — NOW DEVELOPING: CREATIVE HOUSE PRODUCTIONS
+Background: Video (/credibility-spine-bg.mp4), desaturated/dimmed with dark overlay.
+
+  [label] NOW DEVELOPING
+  [H2] Creative House Productions
+  [text] Films, documentaries, and story-driven media now taking shape across
+         the Creative House network.
+  [button] Enter Production Studio → /studio
+  [link] View Current Projects → /movements
+
+SECTION 4 — REAL STORIES IN MOTION
+Background: Dark (#050505)
+
+  [H2] Real Stories in Motion
+  [subtext] Real places. Real projects. Real momentum.
+  [small text] 3 active story universes
+
+  SVG constellation map with 3 animated anchor points:
+    • I Drink Living Water — Water · Health · Environment → /movements/idlw
+    • The Simple Plan — Political Reform · Credibility → /movements/simple-plan
+    • Advo-Cassie — Justice · Advocacy → /movements/advo-cassie
+
+SECTION 5 — FOOTER
+  [logo] Creative House Studios
+  [text] Stewarding story worlds, productions, and voices for good.
+  Links: Movements · Production · Voices · Collaborate
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 2 — MOVEMENTS INDEX  /movements
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Header, 3-card cinematic grid, context section.
+Background: Dark zinc (#0A0A0A).
+
+  [label] Story Universes
+  [H1] Movements
+  [← Back to Lobby]
+
+  Three full-bleed video cards (portrait aspect ratio):
+    Card 1: I Drink Living Water
+            Water, health, ecology, innovation
+            [Explore →] → /movements/idlw
+
+    Card 2: The Simple Plan
+            Recovery stories and healing music
+            [Explore →] → /movements/simple-plan
+
+    Card 3: Advo-Cassie
+            Stories and systems for people navigating coercive separation
+            [Explore →] → /movements/advo-cassie
+
+  BOTTOM SECTION (2-column):
+    What is a Creative House Project?
+    Each project is a fully-realized storytelling ecosystem — built on the
+    Creative House Credibility Spine, delivered through a dedicated Lobby Engine,
+    and amplified through automated distribution systems.
+
+    Proposing a Project
+    Creative House builds project universes for movements, causes, and
+    investigations that have credibility behind them. If you have a story,
+    start a conversation. → /collaborate
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 3 — I DRINK LIVING WATER  /movements/idlw
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/001-IDLW.mp4), scrollable sections.
+
+  HERO
+  [badge] Active Project — Evolving Platform (zinc)
+  [H1] I Drink Living Water
+  [← Back to Movements]
+
+  DESCRIPTION
+  I Drink Living Water is a long-form exploration of water as health, ecology,
+  infrastructure, and culture.
+
+  It began as an independent voice experiment and has grown into a multi-vertical
+  platform spanning wellness, environmental justice, innovation, and emerging
+  systems.
+
+  This project is currently evolving its structure, channels, and presentation.
+
+  LINKS (3 buttons)
+  [Visit Website] → https://www.idrinklivingwater.com
+  [Watch on YouTube] → https://www.youtube.com/@IDrinkLivingWater_
+  [Visit the IDLW Lobby] → https://idlw-lobby.vercel.app
+
+  FOOTER NOTE
+  This project is stewarded and distributed by Creative House Studios.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 4 — THE SIMPLE PLAN  /movements/simple-plan
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/02-TheSimplePlan.mp4), scrollable sections.
+
+  HERO
+  [badge] Active Project — Sponsored by the Misty Foundation (emerald)
+  [H1] The Simple Plan
+  [← Back to Movements]
+
+  DESCRIPTION
+  The Simple Plan is a quiet recovery practice rooted in reflection, music,
+  and lived experience.
+
+  It exists as a mobile app, a body of writing, and an expanding music catalog —
+  all designed to support steadiness, not urgency.
+
+  PRIMARY CTA
+  [Open the App] → https://thesimpleplan.app/
+  The app is the heart of the project.
+
+  THE BOOK
+  The book that inspired the project is available through the app, where readers
+  can move directly from reading into practice.
+  [View the Book] → https://thesimpleplan.app/book
+
+  MUSIC & SOUND
+  The project includes an expanding catalog of healing music designed to support
+  reflection and presence. Each composition is created to accompany the practices
+  without distraction.
+
+  SPONSOR
+  The Simple Plan is supported by the Misty Foundation, a charitable organization
+  committed to recovery and healing.
+
+  FOOTER NOTE
+  This project is stewarded and distributed by Creative House Studios.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 5 — ADVO-CASSIE  /movements/advo-cassie
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/03-Advo-Cassie.mp4), scrollable sections.
+
+  HERO
+  [badge] In Development – Seeking an Aligned Sponsor (amber)
+  [H1] Advo-Cassie
+  [H2] A calm space for orientation and clarity
+  Advo-Cassie is designed for people navigating prolonged, confusing, or
+  emotionally complex situations. It offers tools for documentation, regulation,
+  and steady communication without interpretation, urgency, or pressure.
+  [← Back to Movements]
+
+  WHAT THIS PROJECT IS (glassmorphism box)
+  Advo-Cassie helps people stay oriented when situations feel foggy or
+  overwhelming. It creates space to slow down, organize what's happening, and
+  remain grounded before decisions or communication take place.
+
+  This is not a program you commit to. It is a space you can return to when
+  clarity feels difficult.
+
+  The application experience for this project will live at advo-cassie.app
+  when released.
+
+  What this project is not:
+  • Not therapy or mental health treatment
+  • Not legal advice or representation
+  • Not crisis intervention
+  • Not a substitute for human support
+
+  SPONSORSHIP & STEWARDSHIP (glassmorphism box)
+  Advo-Cassie is being developed as a free public resource, stewarded by
+  Creative House Studios.
+
+  Sponsors make access possible by supporting:
+  • original sound and music
+  • survivor-informed storytelling
+  • ethical design and distribution
+
+  Sponsors do not influence content, users, or outcomes.
+  Creative House curates credibility so this space remains steady, respectful,
+  and safe.
+
+  STORIES & MEDIA (4-column grid of portrait cards)
+  This project will curate:
+  • short films and documentaries
+  • survivor-informed storytelling
+  • grounding music and soundscapes
+  • carefully selected readings
+  (This section previews the kinds of stories intended for this space.)
+
+  CREDIBILITY SPINE PRINCIPLES (pill tags)
+  Creative House Studios exists to protect trust.
+  Every project is guided by:
+  • clear ethical boundaries
+  • audience dignity
+  • sponsor transparency
+  • restrained distribution
+  • no extraction or manipulation
+
+  FOOTER NOTE
+  This project is stewarded and distributed by Creative House Studios.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 6 — STORY LIBRARY  /stories
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/04-Stories.mp4), scrollable sections.
+
+  HERO
+  [← Back to the Lobby]
+  [H1] Stories that help us remember what matters.
+  Films, music, and written works curated by Creative House Studios.
+  Created with care. Shared with permission. Offered without pressure.
+
+  HOW TO EXPLORE (glassmorphism box)
+  There is no right order here.
+
+  Some people watch.
+  Some listen.
+  Some read.
+
+  You can move slowly, or not at all.
+
+  FEATURED COLLECTIONS (3 sections, each with 3 cards)
+
+  Collection 1: Stories of Orientation
+  Documentary shorts, survivor narratives, and first-person essays
+    • Finding Ground — A documentary about recovery
+    • Quiet Voices — Stories of resilience
+    • The Long Path — Essays on healing
+
+  Collection 2: Music for Stillness
+  Instrumental, ambient, and grounding soundscapes
+    • Morning Light — Gentle acoustic meditation
+    • Breath and Space — Ambient soundscape
+    • River Song — Nature and strings
+
+  Collection 3: Education Without Agenda
+  Explainers, conversations, and context without persuasion
+    • Understanding Water Systems — Ecology and infrastructure
+    • Conversations on Care — Healthcare perspectives
+    • Context Matters — Critical thinking toolkit
+
+  PROJECT CHANNELS
+  Some stories live inside specific worlds.
+
+  • Advo-Cassie Stories — Documentation and clarity for complex situations
+    → /movements/advo-cassie
+  • The Simple Plan Stories — Recovery narratives and grounding music
+    → /movements/simple-plan
+  • I Drink Living Water Stories — Water, health, and ecological understanding
+    → /movements/idlw
+
+  FOOTER NOTE
+  Creative House Studios curates work that prioritizes dignity, context, and care.
+
+  Not everything here is easy.
+  Everything here is intentional.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 7 — VOICES NETWORK  /voices
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/05-Collaborate.mp4), scrollable sections.
+
+  HERO
+  [badge] Voices Network — Open for Introductions
+  [H1] For Voices Doing Good
+  If you create films, music, or written work that helps people, you may belong here.
+  [← Back to the Lobby]
+
+  WHAT THIS IS (glassmorphism box)
+  Creative House Studios actively curates and publishes creative work from people
+  with a voice for good.
+
+  We are building a social broadcast channel for films, stories, music, and books
+  that carry meaning, context, and care. Some work lives here first. Some arrives
+  through relationship. All of it is handled with intention.
+
+  We curate slowly and thoughtfully. This takes time, and we will not rush it.
+
+  WHO WE MAY WORK WITH
+  If you are a filmmaker, writer, or musician:
+  You may create work that is thoughtful, complex, or difficult to place in
+  existing platforms.
+  You may care more about who sees your work than how many people see it.
+  You may value stewardship over virality.
+
+  Left-border list:
+  • Documentary films and narrative work
+  • Written essays and survivor narratives
+  • Music for grounding, regulation, or reflection
+
+  OUR APPROACH
+  We curate slowly and thoughtfully.
+  This means:
+  • We do not promise publication or outcomes
+  • We maintain editorial independence
+  • We prioritize dignity and context over reach
+
+  Over time, as communities grow, some creators may choose to share their work
+  through Creative House.
+
+  This is not a submission portal.
+  It is an invitation to introduce yourself.
+
+  CTA
+  [Start a Conversation] → /voices-intro
+  No pitches. No promises. Just an introduction.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 8 — VOICES INTRODUCTION  /voices-intro
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/05-Collaborate.mp4).
+NOTE: This page is a placeholder — introduction form will be built here later.
+
+  [← Back to Voices]
+  [H1] Introduction
+
+  (glassmorphism box)
+  This will become the introduction form.
+  For now, we invite you to reach out directly.
+
+  [Email Us] → creativehousestudios.sk@gmail.com
+
+  Please include a brief introduction to your work and why you're reaching out.
+
+  We review all introductions carefully.
+  Response times may vary as we build our systems thoughtfully.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 9 — COLLABORATE (FOR VOICES DOING GOOD)  /collaborate
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/05-Collaborate.mp4), scrollable sections.
+AUDIENCE: Creators and sponsors who want to collaborate with Creative House.
+
+  HERO
+  [← Back to the Lobby]
+  [H1] For Voices Doing Good
+  If you're creating work that helps people orient, heal, or understand,
+  you're not alone.
+
+  WHAT THIS IS (glassmorphism box)
+  Creative House Studios is a curatorial studio.
+
+  We work with filmmakers, writers, musicians, and sponsors who care more
+  about impact than attention.
+
+  We don't rush work to market.
+  We don't strip stories of nuance.
+  And we don't publish anything we wouldn't stand behind long-term.
+
+  FOR CREATORS
+  Creative House supports work that doesn't fit neatly inside algorithms
+  or trends.
+
+  Left-border list:
+  • Original films and documentaries
+  • Written works and essays
+  • Music created for grounding or reflection
+
+  Submission does not guarantee publication.
+  Careful review does.
+
+  FOR SPONSORS & FOUNDATIONS
+  Some projects are meant to stay free.
+  Sponsors help make that possible quietly.
+
+  Left-border list:
+  • Support access without advertising pressure
+  • Fund stories and tools that remain open to the public
+  • Trust Creative House to curate with integrity
+
+  Sponsorship is stewardship, not branding placement.
+
+  SHARED VALUES (2×2 card grid)
+  • Dignity over virality
+  • Context over outrage
+  • Steadiness over urgency
+  • Human pace over platform metrics
+
+  CTA
+  [Start a Conversation] → creativehousestudios.sk@gmail.com
+  No forms. No pitches. Just an introduction.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 10 — WORK WITH US (AMPLIFY YOUR VOICE)  /work-with-us
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/05-Collaborate.mp4), scrollable sections.
+AUDIENCE: Leaders, builders, and professionals seeking Credibility Spine services.
+
+  HERO
+  [← Back to the Lobby]
+  [H1] Amplify Your Voice
+  For builders, leaders, and creators with proof behind their work.
+  If you've done the work, we help make it visible with care.
+
+  WHAT WE HELP YOU BUILD (glassmorphism box)
+  Creative House Studios works with people who already have real-world proof
+  behind their work.
+
+  This may include:
+  • Lived experience
+  • Professional results
+  • Creative output
+  • Cultural impact
+
+  We organize those signals into a credibility spine and amplify them through
+  storytelling and distribution.
+
+  HOW IT WORKS (3 cards)
+  Credibility Spine
+  We structure the proof behind your work into a clear narrative foundation.
+
+  Campaign Design
+  We design storytelling campaigns aligned with your voice and your audience.
+
+  Distribution Engine
+  We distribute through modern platforms with repetition and narrative consistency.
+
+  THIS IS A FIT IF (left-border list)
+  • You have real-world experience or results
+  • You care about credibility more than virality
+  • You want amplification without distortion
+  • You are ready for thoughtful collaboration
+
+  WHAT WE DON'T DO
+  We do not manufacture credibility.
+  We do not promise outcomes.
+  We do not rush stories that require care.
+
+  CTA
+  [Start a Conversation] → creativehousestudios.sk@gmail.com
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 11 — STUDIO LANDING  /studio
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Cinematic fixed video background (/00-Hero-cover.mp4), studio sub-nav header.
+SUB-NAV: Overview · Productions · Projects · Systems · About
+
+  HERO (centered)
+  [label] Creative House Studios
+  [H1] Creative House Productions
+  Stories that move people.
+  Systems that move culture.
+
+  CURRENT SLATE (3 film-poster cards)
+  Card 1: Blind Ambition
+          Adventure Documentary Series
+          Status: Development (amber badge)
+          An international documentary series following blind athlete Chad Foster
+          as he takes on extreme challenges across the world.
+          Locations: Rome · Paris · Dubai · Kilimanjaro
+
+  Card 2: Blind Adventures
+          Documentary Series
+          Status: Broadcast (emerald badge)
+          A documentary adventure series exploring resilience, accessibility,
+          and global exploration.
+
+  Card 3: Thirst
+          Investigative Documentary
+          Status: Development (amber badge)
+          Investigative documentary exploring water sovereignty and systemic
+          failures in water infrastructure.
+
+  THE STUDIO (2-column)
+  Creative House Productions combines:
+  • Documentary filmmaking
+  • AI-assisted production workflows
+  • Lightweight global production crews
+  • Digital distribution infrastructure
+
+  Leadership:
+  Glen Kerby — Director · Producer
+  Shelly Frank — Executive Producer · Systems Architect
+
+  FOOTER
+  © 2026 Creative House Studios
+  [← Back to Lobby]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 12 — PRODUCTIONS  /studio/productions
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Dark zinc background, studio sub-nav.
+
+  [label] Creative House Studios
+  [H1] Productions
+  Films and documentaries produced or in development by Creative House Studios.
+
+  THREE PRODUCTION CARDS (poster style)
+  1. Blind Ambition (Released)
+     A documentary following a remarkable group of Zimbabwean refugees who became
+     the first team from their country to compete in the World Wine Tasting
+     Championship.
+
+  2. Blind Adventures (Development)
+     Following the journey of visually impaired adventurers as they navigate
+     extraordinary challenges — redefining what is possible.
+
+  3. Thirst (Development)
+     A cinematic investigation into the global water crisis — following the
+     stories of communities, scientists, and advocates working to restore
+     access to clean water.
+
+  BOTTOM NOTE
+  Creative House Studios develops films that work in tandem with its story
+  amplification infrastructure — ensuring each production reaches the audience
+  it was made for.
+  [View Projects →] [Collaborate with us →]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 13 — PROJECTS  /studio/projects
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Dark zinc background, studio sub-nav.
+
+  [label] Creative House Studios
+  [H1] Projects
+  The major Creative House initiatives — each a story universe with its own
+  lobby, community, and distribution system.
+
+  THREE PROJECT CARDS
+  1. I Drink Living Water
+     A global movement restoring access to living water. IDLW is a full
+     storytelling universe covering water health, ecology, technology,
+     and community.
+     → /movements/idlw
+
+  2. The Simple Plan
+     Documenting the stories of people working toward systemic political change
+     through transparency, accountability, and credible civic action.
+     → /movements/simple-plan
+
+  3. Advo-Cassie
+     Amplifying the stories of individuals and families navigating coercive legal
+     and institutional systems — and building the advocacy infrastructure to
+     protect them.
+     → /movements/advo-cassie
+
+  BOTTOM SECTION (2-column)
+  What is a Creative House Project?
+  Each project is a fully-realized storytelling ecosystem — built on the
+  Creative House Credibility Spine, delivered through a dedicated Lobby Engine,
+  and amplified through automated distribution systems.
+
+  Proposing a Project
+  Creative House builds project universes for movements, causes, and
+  investigations that have credibility behind them. If you have a story,
+  start a conversation. → /collaborate
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 14 — SYSTEMS  /studio/systems
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Dark zinc background, studio sub-nav.
+
+  [label] Creative House Studios
+  [H1] Systems
+  Three interconnected layers that power every Creative House story universe.
+
+  SYSTEM 01 — CREDIBILITY SPINE (sky accent)
+  The data layer.
+  The Credibility Spine collects, organizes, and structures stories, sources,
+  research, and creator contributions into a verified database. Stories are
+  mapped geographically and categorized by theme — allowing movements to
+  demonstrate both reach and legitimacy.
+  Details:
+  • Ingests stories from multiple sources — editorial, community, research.
+  • Maps stories geographically by location and impact.
+  • Categorizes by theme, movement, and credibility signal.
+  • Powers the Credibility Constellation visible on each Lobby.
+  • Read-only access for public Lobbies — editorial control stays with the studio.
+
+  SYSTEM 02 — LOBBY ENGINES (amber accent)
+  The entry point into a storytelling universe.
+  A Lobby is the cinematic entry point into a Creative House story universe.
+  Visitors arrive in a designed environment where they can explore stories,
+  projects, and movements. Each Lobby routes visitors into themed verticals —
+  and is connected to the Credibility Spine for live story data.
+  Details:
+  • Cinematic hero with video background and branded identity.
+  • Movement constellation — visual navigation across story verticals.
+  • Live integration with the Credibility Spine.
+  • Themed verticals routed by topic, geography, or community.
+  • Each Lobby is independently deployable as its own domain.
+
+  SYSTEM 03 — DISTRIBUTION SYSTEMS (rose accent)
+  Automated amplification across platforms.
+  Creative House builds automated distribution systems that publish and amplify
+  stories across multiple channels — ensuring credible stories do not remain
+  hidden. Distribution is designed to be persistent, scalable, and
+  platform-agnostic.
+  Details:
+  • Automated publishing to YouTube, social media, and blog networks.
+  • Creator network integration — distributing through trusted voices.
+  • Newsletter and subscriber systems for long-term story reach.
+  • Analytics integration to track story impact across channels.
+  • Platform-agnostic — built to survive algorithm changes.
+
+  THE ARCHITECTURE TOGETHER
+  The three systems are designed to work as a single pipeline. A story enters
+  through the Credibility Spine, is surfaced inside a Lobby Engine, and is
+  distributed outward through automated channels. Each layer reinforces the
+  others.
+  [Learn about the philosophy →] → /studio/about
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAGE 15 — ABOUT  /studio/about
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LAYOUT: Dark zinc background, studio sub-nav.
+
+  [label] Creative House Studios
+  [H1] About
+  "We don't just make films. We build the systems that help stories reach
+  the world."
+
+  ABOUT THE STUDIO
+  Creative House Studios is not a traditional production company and not a
+  marketing agency. It is a story amplification infrastructure designed to help
+  important movements, creators, and investigations reach the world.
+
+  The studio was built around a simple observation: credible stories often fail
+  not because they lack quality, but because they lack infrastructure. Creative
+  House exists to fix that.
+
+  THE CREATIVE HOUSE MISSION
+  Amplify stories that matter.
+
+  Creative House exists to amplify stories that matter and build the
+  infrastructure that helps them reach the world.
+
+  We focus on movements, investigations, and communities that already have
+  credibility behind their work — and need a system to ensure that work is
+  discovered, verified, and distributed at scale.
+
+  We are not a platform. We are not an agency. We are infrastructure.
+
+  HOW THE NETWORK WORKS
+  The three-layer model.
+
+  Every Creative House story universe is built on three interconnected layers:
+  the Credibility Spine (the data layer), the Lobby Engine (the cinematic entry
+  point), and the Distribution System (the amplification layer).
+
+  Stories enter through the Credibility Spine, are surfaced through dedicated
+  Lobby environments, and are distributed outward through automated multi-platform
+  channels.
+
+  This architecture ensures that every story we build for has a persistent,
+  structured path to reach its intended audience — regardless of individual
+  platform changes or algorithm shifts.
+
+  CLOSING LINKS
+  [Explore the Systems →] · [Work With Creative House →] · [Back to the Lobby →]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESIGN SYSTEM NOTES (for context)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Theme:             Dark cinematic — near-black backgrounds, zinc palette
+Typography:        font-light throughout, no bold except homepage section headings
+Buttons:           rounded-sm (square corners) — no oval/pill buttons
+Cards:             backdrop-blur-md bg-white/[0.04] border border-zinc-800 rounded-sm
+Glassmorphism:     bg-zinc-900/30 backdrop-blur-sm border border-zinc-800 rounded-sm
+Video backgrounds: Fixed position, desaturated, dark overlay — all pages except
+                   Movements Index and Studio sub-pages
+Accent color:      #C9972A (warm amber/gold) — lobby only
+Status badges:     amber = Development, emerald = Broadcast/Active, zinc = Evolving
+
+PAGES WITH FORMS / PLACEHOLDERS (not yet built):
+  /voices-intro — Introduction form (currently shows email CTA)
+  Story library cards — Content not yet connected to real media
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF DOCUMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

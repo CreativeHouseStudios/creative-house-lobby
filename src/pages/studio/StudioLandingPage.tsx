@@ -58,7 +58,7 @@ export function StudioLandingPage() {
               {productions.map((prod) => (
                 <Link
                   key={prod.slug}
-                  to={`/studio/films/${prod.slug}`}
+                  to={`/productions/${prod.slug}`}
                   className="group backdrop-blur-md bg-white/[0.04] border border-zinc-800 rounded-sm p-8 hover:border-zinc-600 hover:bg-white/[0.07] transition-all duration-300 flex flex-col justify-between min-h-[340px] cursor-pointer"
                 >
                   {/* Status badge */}
@@ -94,6 +94,63 @@ export function StudioLandingPage() {
                   )}
                 </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── VIEW ALL ─────────────────────────────────────────────────────── */}
+        <section className="py-12 px-6 md:px-12">
+          <div className="max-w-[1400px] mx-auto">
+            <Link
+              to="/studio/productions"
+              className="text-sm text-zinc-400 hover:text-zinc-100 transition-colors tracking-wide"
+            >
+              View all Productions →
+            </Link>
+          </div>
+        </section>
+
+        {/* ── THE STUDIO ───────────────────────────────────────────────────── */}
+        <section className="py-16 px-6 md:px-12 border-t border-zinc-900">
+          <div className="max-w-[1400px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+
+              {/* Left: capabilities */}
+              <div>
+                <p className="text-xs tracking-[0.3em] text-zinc-600 uppercase mb-8">The Studio</p>
+                <p className="text-sm text-zinc-500 font-light leading-relaxed mb-8">
+                  Creative House Productions combines:
+                </p>
+                <ul className="flex flex-col gap-3">
+                  {[
+                    'Documentary filmmaking',
+                    'AI-assisted production workflows',
+                    'Lightweight global production crews',
+                    'Digital distribution infrastructure',
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-4 text-sm text-zinc-400 font-light">
+                      <span className="w-4 h-px bg-zinc-700 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Right: leadership */}
+              <div>
+                <p className="text-xs tracking-[0.3em] text-zinc-600 uppercase mb-8">Leadership</p>
+                <div className="flex flex-col gap-8">
+                  <div>
+                    <p className="text-base text-zinc-100 font-light">Glen Kerby</p>
+                    <p className="text-xs tracking-[0.2em] text-zinc-600 uppercase mt-1 font-light">Director · Producer</p>
+                  </div>
+                  <div>
+                    <p className="text-base text-zinc-100 font-light">Shelly Frank</p>
+                    <p className="text-xs tracking-[0.2em] text-zinc-600 uppercase mt-1 font-light">Executive Producer · Systems Architect</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>

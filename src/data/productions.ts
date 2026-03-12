@@ -1,9 +1,7 @@
 // src/data/productions.ts
 // Single source of truth for all film/production data.
-// Previously duplicated across StudioLandingPage.tsx and ProductionsPage.tsx
-// with contradicting values. ProductionsPage synopses used as authoritative source.
 
-export type ProductionStatus = 'Released' | 'In Development' | 'Broadcast';
+export type ProductionStatus = 'Released' | 'In Development' | 'In Production';
 
 export interface ProductionDetail {
   label: string;
@@ -15,64 +13,68 @@ export interface Production {
   index: string;
   title: string;
   subtitle: string;
-  // Short teaser used on the landing page cards
   teaser: string;
-  // Full synopsis used on individual film pages (from ProductionsPage.tsx)
   synopsis: string;
+  body: string[];
   status: ProductionStatus;
-  // Tailwind classes for status badge
   statusColor: string;
-  // Locations shown on landing card (may be empty)
+  poster: string;
+  posterDetail: string;
+  posterPosition: string;
   locations: string[];
-  // Detail rows shown on film page (label/value pairs)
   details: ProductionDetail[];
-  // CTA on film page
   cta: { label: string; href: string };
+  ctaSecondary?: { label: string; href: string };
 }
 
-// TODO: Teaser and synopsis describe different stories — confirm with Glen/Shelly which is correct. Teasers from StudioLandingPage, synopses from ProductionsPage.
 const blindAmbition: Production = {
   slug: 'blind-ambition',
   index: '01',
   title: 'Blind Ambition',
   subtitle: 'Adventure Documentary Series',
   teaser:
-    'An international documentary series following blind athlete Chad Foster as he takes on extreme challenges across the world.',
+    'An international adventure documentary series following blind entrepreneur and athlete Chad E. Foster as he takes on extraordinary challenges across the world.',
   synopsis:
-    'A documentary following a remarkable group of Zimbabwean refugees who became the first team from their country to compete in the World Wine Tasting Championship. Their journey from displacement to an international stage is a story of identity, excellence, and extraordinary determination.',
-  status: 'Released',
-  statusColor: 'text-emerald-400 border-emerald-800/50 bg-emerald-950/30',
+    'Blind Ambition is a six-episode cinematic series exploring human resilience through extreme environments, cultural encounters, and personal transformation. Hosted by international speaker and business leader Chad E. Foster, the series travels to iconic global destinations where physical challenge meets profound personal insight.',
+  body: [
+    'From climbing historic landmarks to navigating unfamiliar terrain and pushing the limits of endurance, each episode blends breathtaking adventure with a deeper message: our lives are not defined by what we see, but by what we believe is possible.',
+  ],
+  status: 'In Development',
+  statusColor: 'text-amber-400 border-amber-800/50 bg-amber-950/30',
+  poster: '/blind-ambition-cover.jpg',
+  posterDetail: '/blind-ambition-detail.jpg',
+  posterPosition: 'center center',
   locations: ['Rome', 'Paris', 'Dubai', 'Kilimanjaro'],
   details: [
-    {
-      label: 'Locations',
-      value: 'Zimbabwe, South Africa, France',
-    },
-    {
-      label: 'Partners',
-      value: 'International wine community, refugee advocacy networks',
-    },
+    { label: 'Locations', value: 'Rome · Paris · Dubai · Kilimanjaro' },
+    { label: 'Format', value: 'Documentary Series' },
+    { label: 'Status', value: 'In Development — seeking production partners' },
   ],
-  cta: { label: 'Watch the Film', href: '#' },
+  cta: { label: 'Express Interest', href: '/collaborate' },
 };
 
 const blindAdventures: Production = {
   slug: 'blind-adventures',
   index: '02',
   title: 'Blind Adventures',
-  subtitle: 'Documentary Series',
+  subtitle: 'Adventure Documentary Series',
   teaser:
-    'A documentary adventure series exploring resilience, accessibility, and global exploration.',
+    'A wilderness adventure documentary series following blind explorer Ron Walsh as he navigates some of the most remote and demanding landscapes on earth.',
   synopsis:
-    'Following the journey of visually impaired adventurers as they navigate extraordinary physical and emotional challenges — redefining what is possible. The project explores accessibility, courage, and the recalibration of what it means to explore the world.',
-  status: 'In Development',
-  statusColor: 'text-amber-400 border-amber-800/50 bg-amber-950/30',
+    'Blind Adventures captures the raw experience of exploration beyond sight — from deep boreal forests and frozen wilderness trails to high-risk endurance challenges. Each journey reveals the resilience, teamwork, and mental strength required to overcome obstacles that most would never attempt.',
+  body: [
+    'More than an adventure series, the project explores the deeper relationship between courage, perception, and the human spirit in the wild.',
+  ],
+  status: 'Released',
+  statusColor: 'text-emerald-400 border-emerald-800/50 bg-emerald-950/30',
+  poster: '/blind-adventures-cover.jpg',
+  posterDetail: '/blind-adventures-detail.jpg',
+  posterPosition: 'center center',
   locations: [],
   details: [
-    {
-      label: 'Status',
-      value: 'Development — seeking production partners',
-    },
+    { label: 'Network', value: 'WPBS/PBS' },
+    { label: 'Streaming', value: 'PBS Passport + Hulu' },
+    { label: 'Status', value: 'Released — additional seasons in development' },
   ],
   cta: { label: 'Express Interest', href: '/collaborate' },
 };
@@ -81,42 +83,36 @@ const thirst: Production = {
   slug: 'thirst',
   index: '03',
   title: 'Thirst',
-  subtitle: 'Investigative Documentary',
+  subtitle: 'Feature Documentary',
   teaser:
-    'Investigative documentary exploring water sovereignty and systemic failures in water infrastructure.',
+    "A feature documentary investigating the hidden systems controlling the world's most essential resource — water.",
   synopsis:
-    'A cinematic investigation into the global water crisis — following the stories of communities, scientists, and advocates working to restore access to clean water. Thirst connects local struggles to global systems, profiling the people building solutions at every scale.',
-  status: 'In Development',
+    "Thirst follows filmmaker Glen Kerby as a personal search for clean water unfolds into a global story of infrastructure decay, environmental injustice, and the fight to reclaim water as a living resource rather than a commodity.",
+  body: [
+    'Filmed across North America and featuring scientists, Indigenous leaders, and frontline communities, the film explores the deeper question beneath the water crisis:',
+    'Who controls the source of life?',
+  ],
+  status: 'In Production',
   statusColor: 'text-sky-400 border-sky-800/50 bg-sky-950/30',
+  poster: '/thirst-cover.jpg',
+  posterDetail: '/thirst-detail.jpg',
+  posterPosition: 'center center',
   locations: [],
   details: [
-    {
-      label: 'Themes',
-      value: 'Water health, environmental justice, technology, community',
-    },
-    {
-      label: 'Companion Project',
-      value: 'I Drink Living Water',
-    },
+    { label: 'Format', value: 'Feature Documentary' },
+    { label: 'Status', value: 'In Production' },
+    { label: 'Seeking', value: 'Donations · grant partners · co-producers · impact investors' },
   ],
   cta: { label: 'Express Interest', href: '/collaborate' },
+  ctaSecondary: { label: 'Book a Call with Glen', href: '/collaborate' },
 };
 
-/**
- * All productions in catalog order.
- * Serves as the authoritative source for film/production data across the application.
- */
 export const productions: Production[] = [
   blindAmbition,
   blindAdventures,
   thirst,
 ];
 
-/**
- * Look up a production by its slug.
- * @param slug - The production slug (e.g., 'blind-ambition')
- * @returns The production object, or undefined if not found
- */
 export function getProductionBySlug(slug: string): Production | undefined {
-  return productions.find((production) => production.slug === slug);
+  return productions.find((p) => p.slug === slug);
 }

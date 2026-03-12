@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Globe, Film, Mic, X } from 'lucide-react';
+import { Globe, Film, Mic, Layers, X } from 'lucide-react';
 
-// ── 3 DOORS (mirrors IDLW "Follow the Water" currents) ──────────────────────
+// ── 4 DOORS ──────────────────────────────────────────────────────────────────
 const doors = [
   {
     id: 1,
@@ -16,7 +16,7 @@ const doors = [
     title: 'Production Studio',
     description: 'Explore films, documentary projects, and the production slate emerging from Creative House.',
     icon: Film,
-    path: '/studio',           // /production → /studio until dedicated route exists
+    path: '/studio',
   },
   {
     id: 3,
@@ -24,6 +24,13 @@ const doors = [
     description: 'For creators, researchers, and storytellers who want to build with us.',
     icon: Mic,
     path: '/voices',
+  },
+  {
+    id: 4,
+    title: 'The Architecture',
+    description: 'The three-layer system that powers every Creative House story universe — Credibility Spine, Lobby Engine, Distribution.',
+    icon: Layers,
+    path: '/studio/systems',
   },
 ];
 
@@ -52,6 +59,34 @@ const networkPoints = [
     cx: 155,
     cy: 230,
     slug: 'advo-cassie',
+  },
+];
+
+// ── 3 PRODUCTION POINTS (right-side cluster, distinct from movements) ────────
+const productionPoints = [
+  {
+    id: 1,
+    label: 'Blind Ambition',
+    sublabel: 'In Development',
+    cx: 730,
+    cy: 160,
+    slug: 'blind-ambition',
+  },
+  {
+    id: 2,
+    label: 'Blind Adventures',
+    sublabel: 'Released',
+    cx: 780,
+    cy: 210,
+    slug: 'blind-adventures',
+  },
+  {
+    id: 3,
+    label: 'Thirst',
+    sublabel: 'In Production',
+    cx: 720,
+    cy: 255,
+    slug: 'thirst',
   },
 ];
 
@@ -153,7 +188,7 @@ export function CreativeHouseLobby() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {doors.map((door, index) => {
               const Icon = door.icon;
               return (
@@ -315,7 +350,7 @@ export function CreativeHouseLobby() {
                 ))
               )}
 
-              {/* Anchor points */}
+              {/* Anchor points — Story Universes */}
               {networkPoints.map((point) => (
                 <g
                   key={point.id}
@@ -359,6 +394,82 @@ export function CreativeHouseLobby() {
                   </text>
                 </g>
               ))}
+
+              {/* Production cluster label */}
+              <text
+                x="752"
+                y="120"
+                textAnchor="middle"
+                fill="#7DD3FC"
+                fontSize="8"
+                fontFamily="Inter, sans-serif"
+                opacity="0.5"
+                letterSpacing="2"
+              >
+                PRODUCTIONS
+              </text>
+
+              {/* Production cluster — connection lines */}
+              {productionPoints.map((point, i) =>
+                productionPoints.slice(i + 1).map((other) => (
+                  <line
+                    key={`prod-${point.id}-${other.id}`}
+                    x1={point.cx}
+                    y1={point.cy}
+                    x2={other.cx}
+                    y2={other.cy}
+                    stroke="#7DD3FC"
+                    strokeWidth="0.5"
+                    opacity="0.2"
+                    strokeDasharray="4 4"
+                  />
+                ))
+              )}
+
+              {/* Production anchor points */}
+              {productionPoints.map((point) => (
+                <g
+                  key={`prod-${point.id}`}
+                  className="cursor-pointer"
+                  onClick={() => navigate(`/productions/${point.slug}`)}
+                >
+                  <circle cx={point.cx} cy={point.cy} r="22" fill="#7DD3FC" opacity="0.06" />
+                  <circle cx={point.cx} cy={point.cy} r="12" fill="#7DD3FC" opacity="0.12" />
+                  <circle cx={point.cx} cy={point.cy} r="5"  fill="#7DD3FC" opacity="0.85" />
+                  <circle
+                    cx={point.cx}
+                    cy={point.cy}
+                    r="13"
+                    fill="none"
+                    stroke="#7DD3FC"
+                    strokeWidth="1"
+                    opacity="0.35"
+                    className="animate-ping"
+                  />
+                  <text
+                    x={point.cx}
+                    y={point.cy - 28}
+                    textAnchor="middle"
+                    fill="white"
+                    fontSize="10"
+                    fontFamily="Inter, sans-serif"
+                    opacity="0.85"
+                  >
+                    {point.label}
+                  </text>
+                  <text
+                    x={point.cx}
+                    y={point.cy - 16}
+                    textAnchor="middle"
+                    fill="#7DD3FC"
+                    fontSize="8"
+                    fontFamily="Inter, sans-serif"
+                    opacity="0.55"
+                  >
+                    {point.sublabel}
+                  </text>
+                </g>
+              ))}
             </svg>
           </div>
         </div>
@@ -392,6 +503,10 @@ export function CreativeHouseLobby() {
             <span className="text-[#C9972A]/20">•</span>
             <Link to="/collaborate" className="text-[#C9972A]/70 hover:text-[#C9972A] text-sm font-light transition-colors duration-300">
               Collaborate
+            </Link>
+            <span className="text-[#C9972A]/20">•</span>
+            <Link to="/studio/about" className="text-[#C9972A]/70 hover:text-[#C9972A] text-sm font-light transition-colors duration-300">
+              About
             </Link>
           </div>
         </div>
